@@ -6,8 +6,7 @@ $(document).ready(function() {
     let lockGame = false;
     let firstCard, secondCard;
 
-    let moves = 0;
-    let counter = document.querySelector(".moves");
+    let counter = 0;
 
     let modal = document.getElementsByClassName("modal");
 
@@ -42,8 +41,33 @@ $(document).ready(function() {
     function checkMatches() {
         let cardsMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
+        if(cardsMatch) {
+            counter += 1;
+        }
+
+        console.log(counter);
+
         // ternary operator
         cardsMatch ? cardsThatAreDisabled() : unflipCards();
+    }
+
+
+    /*------------------------------------Counts matched cards--*/
+    function matchedCards() {
+        //counter += 1;
+
+        checkMatches();
+        endGameModal();
+    }
+
+
+    /*------------------------------------Modal at the end of the game--*/
+    function endGameModal() {
+        if(matchedCards.counter == 6) {
+            modal.classList.add("show");
+        }
+
+        matchedCards();
     }
 
 
@@ -81,13 +105,6 @@ $(document).ready(function() {
             card.style.order = randomPosition;
         })
     })();
-
-    /*------------------------------------Modal at the end of the game--*/
-    function endGameModal() {
-        if(flipCard === 16) {
-            modal.classList.add("show-modal");
-        }
-    }
 
 
     /*------------------------------------Resets and reshuffles the game--*/
