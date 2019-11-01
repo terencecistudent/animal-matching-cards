@@ -6,6 +6,11 @@ $(document).ready(function() {
     let lockGame = false;
     let firstCard, secondCard;
 
+    let moves = 0;
+    let counter = document.querySelector(".moves");
+
+    let modal = document.getElementsByClassName("modal");
+
     /*------------------------------------Flips the card--*/
     function flipCard() {
         if(lockGame) {
@@ -42,7 +47,7 @@ $(document).ready(function() {
     }
 
 
-    /*------------------------------------Cards which are disabled--*/
+    /*---------------------Cards which are disabled - matches or when 2 cards are already opened--*/
     function cardsThatAreDisabled() {
         firstCard.removeEventListener("click", flipCard);
         secondCard.removeEventListener("click", flipCard);
@@ -69,7 +74,7 @@ $(document).ready(function() {
     }
 
 
-    /*------------------------------------Shuffling the cards--*/
+    /*------------------------------------Shuffles the cards--*/
     (function shuffleCards() {
         cards.forEach(card => {
             let randomPosition = Math.floor(Math.random() * 12);
@@ -77,8 +82,18 @@ $(document).ready(function() {
         })
     })();
 
+    /*------------------------------------Modal at the end of the game--*/
+    function endGameModal() {
+        if(flipCard === 16) {
+            modal.classList.add("show-modal");
+        }
+    }
 
-    /*------------------------------------Reset Game--*/
+
+    /*------------------------------------Resets and reshuffles the game--*/
+    $('#restart').click(function(){
+    location.reload();
+    });
 
     // loop through list of cards
     cards.forEach(card => card.addEventListener("click", flipCard));
