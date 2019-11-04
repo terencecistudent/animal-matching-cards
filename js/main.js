@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     let counter = 0;
 
-    let modal = document.getElementsByClassName("modal");
+    let modal = document.getElementById("congrats-modal");
 
     /*------------------------------------Flips the card--*/
     function flipCard() {
@@ -45,6 +45,11 @@ $(document).ready(function() {
             counter += 1;
         }
 
+        if(cardsMatch === 6) {
+            $("#congrats-modal").modal("show");
+            //endGameModal();
+        }
+
         console.log(counter);
 
         // ternary operator
@@ -53,21 +58,19 @@ $(document).ready(function() {
 
 
     /*------------------------------------Counts matched cards--*/
-    function matchedCards() {
+    /*function matchedCards() {
         //counter += 1;
 
         checkMatches();
         endGameModal();
-    }
+    }*/
 
 
     /*------------------------------------Modal at the end of the game--*/
-    function endGameModal() {
-        if(matchedCards.counter == 6) {
-            modal.classList.add("show");
-        }
-
-        matchedCards();
+    /*function endGameModal() {
+        //modal.classList.add("show");
+        //document.getElementById("congrats-modal").showModal();
+        $("#congrats-modal").modal("show");
     }
 
 
