@@ -58,3 +58,8 @@ body {
 .front-face {
     transform: rotateY(180deg);
 }
+
+/*-------------------------------------Congratulation Modal ----*/
+.modal-content {
+    color: black;
+}

@@ -11,10 +11,15 @@
 /*-----------------------------------------------Flipped Cards---*/
 
 // First selected card should turn around
-describe("Animal Matching Card Game", function() {
+describe("CardGame", function() {
     var firstFlippedCard = true;
     var secondFlippedCard = false;
     var bothFlippedCards = true;
+
+    beforeEach(function() {
+        card = new CardGame;
+    });
+
     describe("Flipped Cards", function() {
         it("should allow first card to turn around", function() {
             expect(firstFlippedCard).toBeTruthy();

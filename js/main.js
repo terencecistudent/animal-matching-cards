@@ -43,8 +43,9 @@ $(document).ready(function() {
             counter += 1;
         }
 
-        if(cardsMatch === 6) {
-            $("#winner-message").html("Congratulations!")
+        if(counter === 6) {
+            //$("#winner-message").html("Congratulations! Have another go!");
+            $("#myModal").modal("show");
         }
 
         console.log(counter);
