@@ -8,8 +8,6 @@ $(document).ready(function() {
 
     let counter = 0;
 
-    let modal = document.getElementById("congrats-modal");
-
     /*------------------------------------Flips the card--*/
     function flipCard() {
         if(lockGame) {
@@ -46,31 +44,13 @@ $(document).ready(function() {
         }
 
         if(cardsMatch === 6) {
-            $("#congrats-modal").modal("show");
-            //endGameModal();
+            $("#winner-message").html("Congratulations!")
         }
 
         console.log(counter);
 
         // ternary operator
         cardsMatch ? cardsThatAreDisabled() : unflipCards();
-    }
-
-
-    /*------------------------------------Counts matched cards--*/
-    /*function matchedCards() {
-        //counter += 1;
-
-        checkMatches();
-        endGameModal();
-    }*/
-
-
-    /*------------------------------------Modal at the end of the game--*/
-    /*function endGameModal() {
-        //modal.classList.add("show");
-        //document.getElementById("congrats-modal").showModal();
-        $("#congrats-modal").modal("show");
     }
 
 
