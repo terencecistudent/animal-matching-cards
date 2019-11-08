@@ -1,9 +1,3 @@
-// Example!!
-/*function addition() {
-    return 22;
-}*/
-
-
-function Cards() {
-
+function result() {
+    return true;
 }

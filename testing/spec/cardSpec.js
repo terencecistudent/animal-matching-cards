@@ -1,36 +1,36 @@
-// Example!!
-/*describe("Calculator", function() {
-    describe("Addition Button", function() {
-        it("should add two numbers together correctly", function() {
-            expect(addition(11, 11)).toBe(22);
+
+describe("Matching Card Game", function() {
+
+    /*--------------------------------------Cards----*/
+
+    describe("Cards", function() {
+        // Memory Game and Cards should be visible
+        it("memory game container should be visible", function() {
+            expect($(".memory-game")).toBeVisible();
         });
-    });
-}); */
-
-
-/*-----------------------------------------------Flipped Cards---*/
-
-describe("Cards", function() {
-
-    beforeEach(function() {
-        cards = new Cards;
-    });
-
-    // Click event
-    describe("Click event", function(){
-        it("should select the first card", function() {
-            $(".memory-card").trigger("click");
-            expect("click").toHaveBeenTriggeredOn(".memory-card");
+        it("memory game container should be visible", function() {
+            expect($(".memory-card")).toBeVisible();
         });
     });
 
-    beforeEach(function() {
-        modal = new Modal;
+
+    /*--------------------------------------Modal----*/
+
+    describe("Modal", function() {
+        it("should be hidden until called upon", function() {
+            expect($("#myModal")).toBeHidden();
+        });
     });
 
-    describe("Modal HTML Content", function() {
-        it("should contain HTML", function() {
-            expect(modal($(`<div class="modal-header text-center"><h5 class="modal-title">Congratulations!</h5></div>`))).toContainHtml("<h5></h5>");
+
+    /*--------------------------------------Reset Button----*/
+    describe("Check New Game Button", function() {
+        beforeEach(function() {
+            btn = $("#restart");
+        });
+
+        it("should allow user to play again", function() {
+            expect(btn).toHaveClass(".btn-lg");
         });
     });
 });
