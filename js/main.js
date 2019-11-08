@@ -44,7 +44,6 @@ $(document).ready(function() {
         }
 
         if(counter === 6) {
-            //$("#winner-message").html("Congratulations! Have another go!");
             $("#myModal").modal("show");
         }
 
@@ -93,7 +92,7 @@ $(document).ready(function() {
 
     /*------------------------------------Resets and reshuffles the game--*/
     $('#restart').click(function(){
-    location.reload();
+        location.reload();
     });
 
     // loop through list of cards
