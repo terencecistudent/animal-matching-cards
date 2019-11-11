@@ -1,6 +1,8 @@
 describe("Matching Card Game", function() {
 
-    /*--------------------------------------Checks the selected card and returns Matches!----*/
+    /*---------------------------------------------------------------CARDS----*/
+
+    /*------Checks the selected card and returns Matches!----*/
     beforeEach(function() {
             SelectedCards = new selectedCard;
     });
@@ -39,7 +41,7 @@ describe("Matching Card Game", function() {
     });
 
 
-    /*------------------------------------Checks the matched cards and returns Matched!----*/
+    /*-----Checks the matched cards and returns Matched!----*/
     beforeEach(function() {
         MatchedCards = new matchedCards;
     });
@@ -49,42 +51,64 @@ describe("Matching Card Game", function() {
             var card1 = matchedCards("bee");
             var card2 = matchedCards("bee");
 
-            expect(card1, card2).toBe("Matched!");
+            expect(card1 && card2).toBe("Matched!");
         });
 
-        it("should return Matched! for matched bee cards", function() {
+        it("should return Matched! for matched crab cards", function() {
             var card1 = matchedCards("crab");
             var card2 = matchedCards("crab");
 
             expect(card1, card2).toBe("Matched!");
         });
 
-        it("should return Matched! for matched bee cards", function() {
+        it("should return Matched! for matched fish cards", function() {
             var card1 = matchedCards("fish");
             var card2 = matchedCards("fish");
 
             expect(card1, card2).toBe("Matched!");
         });
 
-        it("should return Matched! for matched bee cards", function() {
+        it("should return Matched! for matched koala cards", function() {
             var card1 = matchedCards("koala");
             var card2 = matchedCards("koala");
 
             expect(card1, card2).toBe("Matched!");
         });
 
-        it("should return Matched! for matched bee cards", function() {
+        it("should return Matched! for matched squirrel cards", function() {
             var card1 = matchedCards("squirrel");
             var card2 = matchedCards("squirrel");
 
             expect(card1, card2).toBe("Matched!");
         });
 
-        it("should return Matched! for matched bee cards", function() {
+        it("should return Matched! for matched turtle cards", function() {
             var card1 = matchedCards("turtle");
             var card2 = matchedCards("turtle");
 
             expect(card1, card2).toBe("Matched!");
         });
     });
-});
+
+
+    /*-----Click Event----*/
+    describe("Click Event", function() {
+        it("should trigger the click event when a card is clicked on", function() {
+            var spyEvent = spyOnEvent('.memory-card', 'click');
+            $('.memory-card').click();
+            expect('click').toHaveBeenTriggeredOn('.memory-card');
+            expect(spyEvent).toHaveBeenTriggered();
+        });
+    });
+
+
+    /*---------------------------------------------------------------MODAL----*/
+    /*----Modal to contain html---*/
+    describe("Modal", function() {
+        it("should contain HTML content", function() {
+            loadFixtures('index.html');
+            $('#myModal').myTestedPlugin();
+            expect($('#myModal')).toHaveHTML("<p></p>");
+        });
+    });
+})
