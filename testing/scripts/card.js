@@ -15,6 +15,14 @@ function selectedCard(card) {
     };
 }
 
+/*---------------------------------function for backFaceCards----*/
+function backFacedCard(card) {
+    if(card === "Airplane") {
+        return ("Airplane");
+    }
+}
+
+
 
 /*---------------------------------function for matchedCards----*/
 function matchedCards(card1, card2) {

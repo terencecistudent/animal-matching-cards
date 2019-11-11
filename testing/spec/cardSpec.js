@@ -41,6 +41,16 @@ describe("Matching Card Game", function() {
     });
 
 
+    /*------Back Faced Cards should be an airplane----*/
+
+    describe("Back Faced Cards", function() {
+        it("should be an image of an airplane", function() {
+            var selected = backFacedCard("Airplane");
+            expect(selected).toBe("Airplane");
+        });
+    });
+
+
     /*-----Checks the matched cards and returns Matched!----*/
     beforeEach(function() {
         MatchedCards = new matchedCards;
@@ -98,17 +108,6 @@ describe("Matching Card Game", function() {
             $('.memory-card').click();
             expect('click').toHaveBeenTriggeredOn('.memory-card');
             expect(spyEvent).toHaveBeenTriggered();
-        });
-    });
-
-
-    /*---------------------------------------------------------------MODAL----*/
-    /*----Modal to contain html---*/
-    describe("Modal", function() {
-        it("should contain HTML content", function() {
-            loadFixtures('index.html');
-            $('#myModal').myTestedPlugin();
-            expect($('#myModal')).toHaveHTML("<p></p>");
         });
     });
 })
