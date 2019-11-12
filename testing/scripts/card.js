@@ -1,3 +1,5 @@
+/*----------------------------------------------FUNCTIONS FOR CARDS---*/
+
 /*---------------------------------function for selectedCard----*/
 function selectedCard(card) {
     if (card === "bee") {
@@ -41,67 +43,67 @@ function notMatchingCards(firstCard, secondCard) {
 
     // firstCard = crab
     if (firstCard === "crab" && secondCard === "bee") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "crab" && secondCard === "fish") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "crab" && secondCard === "koala") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "crab" && secondCard === "squirrel") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "crab" && secondCard === "turtle") {
-        return ("Not Matched");
+        return (false);
     };
 
     // firstCard = fish
     if (firstCard === "fish" && secondCard === "bee") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "fish" && secondCard === "crab") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "fish" && secondCard === "koala") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "fish" && secondCard === "squirrel") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "fish" && secondCard === "turtle") {
-        return ("Not Matched");
+        return (false);
     };
 
     // firstCard = koala
     if (firstCard === "koala" && secondCard === "bee") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "koala" && secondCard === "crab") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "koala" && secondCard === "fish") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "koala" && secondCard === "squirrel") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "koala" && secondCard === "turtle") {
-        return ("Not Matched");
+        return (false);
     };
 
     // firstCard = squirrel
     if (firstCard === "squirrel" && secondCard === "bee") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "squirrel" && secondCard === "crab") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "squirrel" && secondCard === "fish") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "squirrel" && secondCard === "koala") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "squirrel" && secondCard === "turtle") {
-        return ("Not Matched");
+        return (false);
     };
 
     // firstCard = turtle
     if (firstCard === "turtle" && secondCard === "bee") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "turtle" && secondCard === "crab") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "turtle" && secondCard === "fish") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "turtle" && secondCard === "koala") {
-        return ("Not Matched");
+        return (false);
     } else if (firstCard === "turtle" && secondCard === "squirrel") {
-        return ("Not Matched");
+        return (false);
     };
 }
 
@@ -138,5 +140,16 @@ function matchedCards(card1, card2) {
         return ("Matched!");
     } else if (card1 === "turtle" && card2 === "turtle") {
         return ("Matched!");
+    };
+}
+
+
+/*----------------------------------------------FUNCTIONS FOR NEW GAME BUTTON---*/
+
+/*---------------------------------function for buttonHtml----*/
+
+function buttonHtml() {
+    if ($("#restart:contains('New Game')")) {
+        return true;
     };
 }

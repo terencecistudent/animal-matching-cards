@@ -8,7 +8,7 @@ describe("Matching Card Game", function() {
             SelectedCards = new selectedCard;
     });
 
-    describe("Check Cards", function() {
+    describe("Check Cards To See If They Match Image", function() {
 
         it("should return Matches! for selecting bee card", function() {
             var selected = selectedCard("bee");
@@ -244,7 +244,7 @@ describe("Matching Card Game", function() {
 
     /*------Should return Boolean true if selected card matches----*/
 
-    describe("Cards Matching Boolean", function() {
+    describe("Cards That Match Image Boolean true", function() {
         it("should return true if it is a bee card", function() {
             var card = cardBoolean("bee")
             expect(card).toBeTruthy();
@@ -327,13 +327,13 @@ describe("Matching Card Game", function() {
     });
 
 
-    /*-----Click Event----*/
-    describe("Click Event", function() {
-        it("should trigger the click event when a card is clicked on", function() {
-            var spyEvent = spyOnEvent('.memory-card', 'click');
-            $('.memory-card').click();
-            expect('click').toHaveBeenTriggeredOn('.memory-card');
-            expect(spyEvent).toHaveBeenTriggered();
+    /*----------------------------------------------------NEW GAME BUTTON----*/
+
+    describe("New Game Button", function() {
+        it("should contain contain HTML", function() {
+            var button = buttonHtml("New Game");
+
+            expect(button).toBeTruthy();
         });
     });
 })
