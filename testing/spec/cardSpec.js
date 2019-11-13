@@ -86,155 +86,155 @@ describe("Matching Card Game", function() {
         });
 
         // card1 = crab
-        it("should return a false if cards crab and fish don't match", function() {
+        it("should return false if cards crab and fish don't match", function() {
             var card1 = notMatchingCards("crab");  
             var card2 = notMatchingCards("bee");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards crab and fish don't match", function() {
+        it("should return false if cards crab and fish don't match", function() {
             var card1 = notMatchingCards("crab");  
             var card2 = notMatchingCards("fish");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards crab and koala don't match", function() {
+        it("should return false if cards crab and koala don't match", function() {
             var card1 = notMatchingCards("crab");  
             var card2 = notMatchingCards("koala");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards crab and squirrel don't match", function() {
+        it("should return false if cards crab and squirrel don't match", function() {
             var card1 = notMatchingCards("crab");  
             var card2 = notMatchingCards("squirrel");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards crab and turtle don't match", function() {
+        it("should return false if cards crab and turtle don't match", function() {
             var card1 = notMatchingCards("crab");  
             var card2 = notMatchingCards("turtle");
             expect(card1 + card2).toBeFalsy();
         });
 
         // card1 = fish
-        it("should return a false if cards fish and bee don't match", function() {
+        it("should return false if cards fish and bee don't match", function() {
             var card1 = notMatchingCards("fish");  
             var card2 = notMatchingCards("bee");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards fish and crab don't match", function() {
+        it("should return false if cards fish and crab don't match", function() {
             var card1 = notMatchingCards("fish");  
             var card2 = notMatchingCards("crab");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards fish and koala don't match", function() {
+        it("should return false if cards fish and koala don't match", function() {
             var card1 = notMatchingCards("crab");  
             var card2 = notMatchingCards("koala");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards fish and squirrel don't match", function() {
+        it("should return false if cards fish and squirrel don't match", function() {
             var card1 = notMatchingCards("fish");  
             var card2 = notMatchingCards("squirrel");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards fish and turtle don't match", function() {
+        it("should return false if cards fish and turtle don't match", function() {
             var card1 = notMatchingCards("fish");  
             var card2 = notMatchingCards("turtle");
             expect(card1 + card2).toBeFalsy();
         });
 
         // card1 = koala
-        it("should return a false if cards koala and bee don't match", function() {
+        it("should return false if cards koala and bee don't match", function() {
             var card1 = notMatchingCards("koala");  
             var card2 = notMatchingCards("bee");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards koala and crab don't match", function() {
+        it("should return false if cards koala and crab don't match", function() {
             var card1 = notMatchingCards("koala");  
             var card2 = notMatchingCards("crab");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards koala and fish don't match", function() {
+        it("should return false if cards koala and fish don't match", function() {
             var card1 = notMatchingCards("koala");  
             var card2 = notMatchingCards("fish");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards koala and squirrel don't match", function() {
+        it("should return false if cards koala and squirrel don't match", function() {
             var card1 = notMatchingCards("koala");  
             var card2 = notMatchingCards("squirrel");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards koala and turtle don't match", function() {
+        it("should return false if cards koala and turtle don't match", function() {
             var card1 = notMatchingCards("koala");  
             var card2 = notMatchingCards("turtle");
             expect(card1 + card2).toBeFalsy();
         });
 
         // card1 = squirrel
-        it("should return a false if cards squirrel and bee don't match", function() {
+        it("should return false if cards squirrel and bee don't match", function() {
             var card1 = notMatchingCards("squirrel");  
             var card2 = notMatchingCards("bee");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards squirrel and crab don't match", function() {
+        it("should return false if cards squirrel and crab don't match", function() {
             var card1 = notMatchingCards("squirrel");  
             var card2 = notMatchingCards("crab");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards squirrel and fish don't match", function() {
+        it("should return false if cards squirrel and fish don't match", function() {
             var card1 = notMatchingCards("squirrel");  
             var card2 = notMatchingCards("fish");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards squirrel and koala don't match", function() {
+        it("should return false if cards squirrel and koala don't match", function() {
             var card1 = notMatchingCards("squirrel");  
             var card2 = notMatchingCards("koala");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards squirrel and turtle don't match", function() {
+        it("should return false if cards squirrel and turtle don't match", function() {
             var card1 = notMatchingCards("squirrel");  
             var card2 = notMatchingCards("turtle");
             expect(card1 + card2).toBeFalsy();
         });
 
         // card1 = turtle
-        it("should return a false if cards turtle and bee don't match", function() {
+        it("should return false if cards turtle and bee don't match", function() {
             var card1 = notMatchingCards("turtle");  
             var card2 = notMatchingCards("bee");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards turtle and crab don't match", function() {
+        it("should return false if cards turtle and crab don't match", function() {
             var card1 = notMatchingCards("turtle");  
             var card2 = notMatchingCards("crab");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards turtle and fish don't match", function() {
+        it("should return false if cards turtle and fish don't match", function() {
             var card1 = notMatchingCards("turtle");  
             var card2 = notMatchingCards("fish");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards turtle and koala don't match", function() {
+        it("should return false if cards turtle and koala don't match", function() {
             var card1 = notMatchingCards("turtle");  
             var card2 = notMatchingCards("koala");
             expect(card1 + card2).toBeFalsy();
         });
 
-        it("should return a false if cards turtle and squirrel don't match", function() {
+        it("should return false if cards turtle and squirrel don't match", function() {
             var card1 = notMatchingCards("turtle");  
             var card2 = notMatchingCards("squirrel");
             expect(card1 + card2).toBeFalsy();
@@ -284,10 +284,11 @@ describe("Matching Card Game", function() {
 
     describe("Cards Matched", function() {
         it("should return Matched! for matched bee cards", function() {
-            var card1 = matchedCards("bee");
-            var card2 = matchedCards("bee");
+            var card1 = matchedCards("bee1");
+            var card2 = matchedCards("bee2");
+            var matched = card1 + card2;
 
-            expect(card1 && card2).toBe("Matched!");
+            expect(matched).toBe("Matched!");
         });
 
         it("should return Matched! for matched crab cards", function() {
@@ -329,11 +330,22 @@ describe("Matching Card Game", function() {
 
     /*----------------------------------------------------NEW GAME BUTTON----*/
 
+    /*-----Button should text 'New Game'----*/
     describe("New Game Button", function() {
-        it("should contain contain HTML", function() {
-            var button = buttonHtml("New Game");
+        it("should contain contain text 'New Game'", function() {
+            var button = buttonElement("New Game");
 
             expect(button).toBeTruthy();
         });
+
+        it("should contain a button element", function() {
+            var button = buttonElement("<button></button>");
+
+            expect(button).toBeTruthy();
+        });
+
+        it("should contain an ID 'restart'", function() {
+            
+        })
     });
 })

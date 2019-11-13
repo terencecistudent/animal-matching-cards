@@ -148,8 +148,16 @@ function matchedCards(card1, card2) {
 
 /*---------------------------------function for buttonHtml----*/
 
-function buttonHtml() {
+function buttonElement() {
     if ($("#restart:contains('New Game')")) {
         return true;
+    };
+
+    if ($("#restart:contains('<button></button>')")) {
+        return true;
+    };
+
+    if ($("#restart:contains('#restart')")) {
+        return "ID Matched";
     };
 }
