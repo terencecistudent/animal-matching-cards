@@ -16,6 +16,9 @@ body {
     color: white;
 }
 
+/* 
+    Memory Game and Card Styles 
+*/
 .memory-game-container {
     max-width: 640px;
     height: 450px;
@@ -42,6 +45,9 @@ body {
     transition: transform .2s;
 }
 
+/*
+    Memory Card Flip Rotation
+*/
 .memory-card.flip {
     transform: rotateY(180deg);
 }
@@ -59,7 +65,9 @@ body {
     transform: rotateY(180deg);
 }
 
-/*-------------------------------------Congratulation Modal ----*/
+/*
+    Modal Content 
+*/
 .modal-content {
     color: black;
 }
