@@ -278,52 +278,48 @@ describe("Matching Card Game", function() {
 
 
     /*-----Checks the matched cards and returns Matched!----*/
-    beforeEach(function() {
-        MatchedCards = new matchedCards;
-    });
 
     describe("Cards Matched", function() {
         it("should return Matched! for matched bee cards", function() {
-            var card1 = matchedCards("bee1");
-            var card2 = matchedCards("bee2");
-            var matched = card1 + card2;
+            var card1 = matchedCards("bee");
+            var card2 = matchedCards("bee");
 
-            expect(matched).toBe("Matched!");
+            expect(card1).toEqual(card2);
         });
 
         it("should return Matched! for matched crab cards", function() {
             var card1 = matchedCards("crab");
             var card2 = matchedCards("crab");
 
-            expect(card1, card2).toBe("Matched!");
+            expect(card1).toEqual(card2);
         });
 
         it("should return Matched! for matched fish cards", function() {
             var card1 = matchedCards("fish");
             var card2 = matchedCards("fish");
 
-            expect(card1, card2).toBe("Matched!");
+            expect(card1).toEqual(card2);
         });
 
         it("should return Matched! for matched koala cards", function() {
             var card1 = matchedCards("koala");
             var card2 = matchedCards("koala");
 
-            expect(card1, card2).toBe("Matched!");
+            expect(card1).toEqual(card2);
         });
 
         it("should return Matched! for matched squirrel cards", function() {
             var card1 = matchedCards("squirrel");
             var card2 = matchedCards("squirrel");
 
-            expect(card1, card2).toBe("Matched!");
+            expect(card1).toEqual(card2);
         });
 
         it("should return Matched! for matched turtle cards", function() {
             var card1 = matchedCards("turtle");
             var card2 = matchedCards("turtle");
 
-            expect(card1, card2).toBe("Matched!");
+            expect(card1).toEqual(card2);
         });
     });
 
@@ -331,7 +327,7 @@ describe("Matching Card Game", function() {
     /*----------------------------------------------------NEW GAME BUTTON----*/
 
     /*-----Button should text 'New Game'----*/
-    describe("New Game Button", function() {
+    describe("New Game Button Content", function() {
         it("should contain contain text 'New Game'", function() {
             var button = buttonElement("New Game");
 
@@ -343,9 +339,43 @@ describe("Matching Card Game", function() {
 
             expect(button).toBeTruthy();
         });
-
-        it("should contain an ID 'restart'", function() {
-            
-        })
     });
+
+
+    /*-----Button Click Event Test----*/
+    describe("New Game Button Click Event", function () {
+
+        beforeEach(function () {
+            setUpResetButton();
+        });
+
+        it("should invoke the 'restart' click event.", function () {
+            var spyEvent = null;
+
+            beforeEach(function() {
+                setFixtures(setUpResetButton());
+                spyEvent = spyOnEvent($("#restart"), "click");
+                $("#restart").click();
+            });
+
+            it("was clicked", function() {
+                expect("click").toHaveBeenTriggeredOn($("#restart"))
+            });
+
+            describe("reset event", function() {
+                beforeEach(function() {
+                    spyEvent.reset();
+                });
+
+                it("was clicked", function() {
+                    expect("click").not.toHaveBeenTriggeredOn($("#restart"))
+                });
+            });
+
+            /*spyEvent = spyOnEvent("#restart", "click");
+            $("#restart").trigger("click");
+            expect("click").toHaveBeenTriggeredOn("#restart");
+            expect(spyEvent).toHaveBeenTriggered();*/
+        });
+    }); 
 })

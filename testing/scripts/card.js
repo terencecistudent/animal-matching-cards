@@ -140,7 +140,9 @@ function matchedCards(card1, card2) {
         return ("Matched!");
     } else if (card1 === "turtle" && card2 === "turtle") {
         return ("Matched!");
-    };
+    } else {
+        return ("Final Else - nothing else Matched!");
+    }
 }
 
 
@@ -156,8 +158,10 @@ function buttonElement() {
     if ($("#restart:contains('<button></button>')")) {
         return true;
     };
+}
 
-    if ($("#restart:contains('#restart')")) {
-        return "ID Matched";
-    };
+/*---------------------------------function for buttonClick----*/
+
+function setUpResetButton() {
+    setFixtures = $(`<button id="restart" type="button" onclick="newGame()" class="btn btn-danger btn-lg">New Game</button>`);
 }
