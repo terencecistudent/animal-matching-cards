@@ -145,17 +145,18 @@ https://www.gitpod.io/docs/43_config_ports/
 
 - Laptop View:
 
-![image](https://user-images.githubusercontent.com/48124466/68049030-c84b6d80-fcd9-11e9-88e8-02c18e927c2d.png)
+![image](https://user-images.githubusercontent.com/48124466/68890915-cc36b100-0717-11ea-90e8-5fa30777f166.png)
 
 
 - iPad View (Landscape):
 
-![image](https://user-images.githubusercontent.com/48124466/68049149-12ccea00-fcda-11e9-93bc-20ff74342e57.png)
+![image](https://user-images.githubusercontent.com/48124466/68891014-f6886e80-0717-11ea-9ee9-4a4fab8f4ed3.png)
 
 
 - Phone View (Landscape):
 
-![image](https://user-images.githubusercontent.com/48124466/68049209-37c15d00-fcda-11e9-94b1-944f4650e341.png)
+![image](https://user-images.githubusercontent.com/48124466/68891064-0acc6b80-0718-11ea-9079-b0a15a35ef92.png)
+![image](https://user-images.githubusercontent.com/48124466/68891118-2768a380-0718-11ea-920e-a291a20f5c23.png)
 
 
 ## Technologies Used
