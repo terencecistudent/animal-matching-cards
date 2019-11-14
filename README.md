@@ -24,6 +24,11 @@ This game is also browser cross compatible.
 
 I have chosen to use Bootstrap 4 for the design and layout of my game.  Bootstrap is simple, effective and very efficient to use.
 
+In terms of my font, I have changed it to Roboto using Google Fonts.
+The reason why I chose this font is because the text is clear and easy to read for the users.
+
+https://fonts.google.com/
+
 
 ### Wireframes
 
