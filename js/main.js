@@ -86,7 +86,7 @@ $(document).ready(function() {
         cards.forEach(card => {
             let randomPosition = Math.floor(Math.random() * 12);
             card.style.order = randomPosition;
-        })
+        });
     })();
 
 
