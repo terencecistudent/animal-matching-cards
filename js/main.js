@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     let counter = 0;
 
-    /*------------------------------------Flips the card--*/
+    // Flips the card
     function flipCard() {
         if(lockGame) {
             return;
@@ -35,7 +35,7 @@ $(document).ready(function() {
     }
 
 
-    /*------------------------------------Checks for any matches--*/
+    // Checks for any matches
     function checkMatches() {
         let cardsMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
@@ -54,14 +54,14 @@ $(document).ready(function() {
     }
 
 
-    /*---------------------Cards which are disabled - matches or when 2 cards are already opened--*/
+    // Cards which are disabled - matches or when 2 cards are already opened
     function cardsThatAreDisabled() {
         firstCard.removeEventListener("click", flipCard);
         secondCard.removeEventListener("click", flipCard);
     }
 
 
-     /*------------------------------------Unflips cards if not a match--*/
+     // Unflips cards if not a match
     function unflipCards() {
         lockGame = true;
 
@@ -74,14 +74,14 @@ $(document).ready(function() {
     }
 
 
-    /*------------------------------------Reset cards after each game--*/
+    // Reset cards after each game
     function resetCards() {
         [haveFlippedCard, lockGame] = [false, false];
         [firstCard, secondCard] = [null, null];
     }
 
 
-    /*------------------------------------Shuffles the cards--*/
+    // Shuffles the cards
     (function shuffleCards() {
         cards.forEach(card => {
             let randomPosition = Math.floor(Math.random() * 12);
@@ -90,7 +90,7 @@ $(document).ready(function() {
     })();
 
 
-    /*------------------------------------Resets and reshuffles the game--*/
+    // Resets and reshuffles the game
     $('#restart').click(function(){
         location.reload();
     });

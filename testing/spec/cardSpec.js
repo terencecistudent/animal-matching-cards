@@ -1,8 +1,10 @@
 describe("Matching Card Game", function() {
 
-    /*---------------------------------------------------------------CARDS----*/
+    /*
+        CARDS
+    */
 
-    /*------Checks the selected card and returns Matches!----*/
+    // Checks the selected card and returns Matches! if the card = correct image
 
     beforeEach(function() {
             SelectedCards = new selectedCard;
@@ -42,7 +44,7 @@ describe("Matching Card Game", function() {
     });
 
 
-    /*------Back Faced Cards should be an airplane----*/
+    // Back Faced Cards should be an airplane
 
     describe("Back Faced Cards", function() {
         it("should be an image of an airplane", function() {
@@ -52,7 +54,8 @@ describe("Matching Card Game", function() {
     });
 
 
-    /*------Should return false if cards don't match----*/
+    // Should return false if cards don't match
+
     describe("Cards That Don't Match Equal Boolean false", function() {
         // card1 = bee
         it("should return false if cards bee and crab don't match", function() {
@@ -242,7 +245,7 @@ describe("Matching Card Game", function() {
     });
 
 
-    /*------Should return Boolean true if selected card matches----*/
+    // Should return Boolean true if selected card matches
 
     describe("Cards That Match Image Boolean true", function() {
         it("should return true if it is a bee card", function() {
@@ -277,7 +280,7 @@ describe("Matching Card Game", function() {
     });
 
 
-    /*-----Checks the matched cards and returns Matched!----*/
+    // Checks the matched cards and returns Matched!
 
     describe("Cards Matched", function() {
         it("should return Matched! for matched bee cards", function() {
@@ -324,9 +327,11 @@ describe("Matching Card Game", function() {
     });
 
 
-    /*----------------------------------------------------NEW GAME BUTTON----*/
+    /*
+        NEW GAME BUTTON
+    */
 
-    /*-----Button should text 'New Game'----*/
+    //Button should text 'New Game'
     describe("New Game Button Content", function() {
         it("should contain contain text 'New Game'", function() {
             var button = buttonElement("New Game");
@@ -340,42 +345,4 @@ describe("Matching Card Game", function() {
             expect(button).toBeTruthy();
         });
     });
-
-
-    /*-----Button Click Event Test----*/
-    describe("New Game Button Click Event", function () {
-
-        beforeEach(function () {
-            setUpResetButton();
-        });
-
-        it("should invoke the 'restart' click event.", function () {
-            var spyEvent = null;
-
-            beforeEach(function() {
-                setFixtures(setUpResetButton());
-                spyEvent = spyOnEvent($("#restart"), "click");
-                $("#restart").click();
-            });
-
-            it("was clicked", function() {
-                expect("click").toHaveBeenTriggeredOn($("#restart"))
-            });
-
-            describe("reset event", function() {
-                beforeEach(function() {
-                    spyEvent.reset();
-                });
-
-                it("was clicked", function() {
-                    expect("click").not.toHaveBeenTriggeredOn($("#restart"))
-                });
-            });
-
-            /*spyEvent = spyOnEvent("#restart", "click");
-            $("#restart").trigger("click");
-            expect("click").toHaveBeenTriggeredOn("#restart");
-            expect(spyEvent).toHaveBeenTriggered();*/
-        });
-    }); 
 })

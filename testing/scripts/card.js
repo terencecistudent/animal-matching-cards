@@ -1,6 +1,8 @@
-/*----------------------------------------------FUNCTIONS FOR CARDS---*/
+/*
+    FUNCTIONS FOR CARDS
+*/
 
-/*---------------------------------function for selectedCard----*/
+// function for selectedCard
 function selectedCard(card) {
     if (card === "bee") {
         return ("Matches!");
@@ -17,7 +19,7 @@ function selectedCard(card) {
     };
 }
 
-/*---------------------------------function for backFaceCards----*/
+//function for backFaceCards
 function backFacedCard(card) {
     if(card === "Airplane") {
         return ("Airplane");
@@ -25,7 +27,7 @@ function backFacedCard(card) {
 }
 
 
-/*---------------------------------function for notMatchingCards - returns false----*/
+// function for notMatchingCards - returns false
 function notMatchingCards(firstCard, secondCard) {
 
     // firstCard = bee
@@ -108,7 +110,7 @@ function notMatchingCards(firstCard, secondCard) {
 }
 
 
-/*---------------------------------function for cardBoolean----*/
+// function for cardBoolean
 function cardBoolean(card) {
     if (card === "bee") {
         return true;
@@ -126,7 +128,7 @@ function cardBoolean(card) {
 }
 
 
-/*---------------------------------function for matchedCards----*/
+// function for matchedCards
 function matchedCards(card1, card2) {
     if (card1 === "bee" && card2 === "bee") {
         return ("Matched!");
@@ -146,10 +148,11 @@ function matchedCards(card1, card2) {
 }
 
 
-/*----------------------------------------------FUNCTIONS FOR NEW GAME BUTTON---*/
+/*
+    FUNCTIONS FOR NEW GAME BUTTON
+*/
 
-/*---------------------------------function for buttonHtml----*/
-
+// function for buttonHtml
 function buttonElement() {
     if ($("#restart:contains('New Game')")) {
         return true;
@@ -160,8 +163,7 @@ function buttonElement() {
     };
 }
 
-/*---------------------------------function for buttonClick----*/
-
+// function for buttonClick
 function setUpResetButton() {
-    setFixtures = $(`<button id="restart" type="button" onclick="newGame()" class="btn btn-danger btn-lg">New Game</button>`);
+    var setFixtures = $(`<button id="restart" type="button" onclick="newGame()" class="btn btn-danger btn-lg">New Game</button>`);
 }
