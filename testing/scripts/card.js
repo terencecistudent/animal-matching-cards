@@ -162,8 +162,3 @@ function buttonElement() {
         return true;
     };
 }
-
-// function for buttonClick
-function setUpResetButton() {
-    var setFixtures = $(`<button id="restart" type="button" onclick="newGame()" class="btn btn-danger btn-lg">New Game</button>`);
-}

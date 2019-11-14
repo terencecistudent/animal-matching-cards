@@ -331,7 +331,7 @@ describe("Matching Card Game", function() {
         NEW GAME BUTTON
     */
 
-    //Button should text 'New Game'
+    // Button should have text 'New Game' and a button element
     describe("New Game Button Content", function() {
         it("should contain contain text 'New Game'", function() {
             var button = buttonElement("New Game");
@@ -345,4 +345,4 @@ describe("Matching Card Game", function() {
             expect(button).toBeTruthy();
         });
     });
-})
+});
