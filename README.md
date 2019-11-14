@@ -9,23 +9,28 @@ which allows the user to restart the game.
 This game is also browser cross compatible.
 
 
-## User Stories
+## UX
 
-- Users should be able to click a card.
-- Users should be able to select two cards at a time.
-- Users should not be allowed to click another card when two are currently displaying.
-- Users should get a **Congratulations** pop up when all cards are matched.
+### User Stories
 
-
-## Framework
-
-I have chosen to use Bootstrap 4 for the design and layout of my game.  Bootstrap is simple and very efficient to use.
+- As a user, I would like to click on a card which I want to select.
+- As a user, I want to click on two cards to see if I got a match.
+- As a user, I do not want to click on three cards which will all turn around at the same time as this will cause a problem.
+- As a user, I would like a pop up message shown when I complete the game with a vistory message so I know that I have completed the game.
+- As a user, I would like to play a new game to find reshuffled cards.
 
 
-## Wireframes
+### Framework
+
+I have chosen to use Bootstrap 4 for the design and layout of my game.  Bootstrap is simple, effective and very efficient to use.
+
+
+### Wireframes
 
 I have used a software called JustInMind Prototyper to create 2D Models of my game.  
 As not everybody will not be able to access this software, I have made screenshots and put them into Word documents attached to my GitHub.
+- A link to my wireframes can be found here:
+https://github.com/terencecistudent/matching-cards-project/blob/master/2D%20Model%20Responsive.docx
 
 
 ## Requirements
@@ -59,6 +64,9 @@ Here is the link for instructions: https://www.gitpod.io/
 
 ### Jasmine Tests
 
+Jasmine Testing Scripts and Specs can be found here: 
+https://github.com/terencecistudent/matching-cards-project/tree/master/testing
+
 1. Selected Front Faced Cards Equals Image From Local File, e.g. bee:
 
 ![image](https://user-images.githubusercontent.com/48124466/68870972-a4355680-06f3-11ea-9694-832e545c1ce3.png)
@@ -88,9 +96,16 @@ Here is the link for instructions: https://www.gitpod.io/
 ![image](https://user-images.githubusercontent.com/48124466/68872095-61747e00-06f5-11ea-8c71-8de747efb062.png)
 
 
+### Manual Tests
+
+As well as Jasmine Testing, I have also completed manual tests regarding the Modal and Button's functionality:
+Attached is a link to a Word document as to where I have printed screenshots which is contained in the **testing** folder:
+https://github.com/terencecistudent/matching-cards-project/blob/master/testing/Modal%20and%20Button%20Functionality.docx
+
+
 ### Running Respnsive Designs on Google Chrome:
 
-Here is a link how to run the application on a live server by configuring and exposing ports:
+Here is a link how to run the application on a live server by configuring and exposing ports with GitPod:
 https://www.gitpod.io/docs/43_config_ports/
 
 **To view responsive applications:**
@@ -106,32 +121,23 @@ https://www.gitpod.io/docs/43_config_ports/
 
 ##### HTML : https://validator.w3.org/
 
-- index.html: Warnings: 
-![image](https://user-images.githubusercontent.com/48124466/68872903-ae0c8900-06f6-11ea-8a3c-324b4484295a.png)
+- index.html: No Errors
 
-- jasmine-testing.html: Warnings: 
-![image](https://user-images.githubusercontent.com/48124466/68873041-e2804500-06f6-11ea-9df4-851d0fbd7c72.png)
-![image](https://user-images.githubusercontent.com/48124466/68872903-ae0c8900-06f6-11ea-8a3c-324b4484295a.png)
+- jasmine-testing.html: No Errors
 
 
 ##### CSS : https://jigsaw.w3.org/css-validator/
 
-- style.css: 
-![image](https://user-images.githubusercontent.com/48124466/68873314-59b5d900-06f7-11ea-9397-7a4309ec32f5.png)
+- style.css: No Errors
 
 ##### JavaScript : https://codebeautify.org/jsvalidate
-
 - main.js: Warnings: 
+
 ![image](https://user-images.githubusercontent.com/48124466/68873669-df398900-06f7-11ea-8168-a8d348ac034d.png)
-
-- cardSpec.js: Warnings:
-![image](https://user-images.githubusercontent.com/48124466/68873857-2b84c900-06f8-11ea-9943-1794ba79afdb.png)
-
-- card.js: Warnings:
-![image](https://user-images.githubusercontent.com/48124466/68874034-730b5500-06f8-11ea-9fcf-21cce0bfc226.png)
 
 
 ### Responsive Design Testing and Visuals
+
 - Laptop View:
 
 ![image](https://user-images.githubusercontent.com/48124466/68049030-c84b6d80-fcd9-11e9-88e8-02c18e927c2d.png)
@@ -148,6 +154,7 @@ https://www.gitpod.io/docs/43_config_ports/
 
 
 ## Technologies Used
+
 - Bootstrap 4
 - jQuery v3.4.1
 - HTML
@@ -156,15 +163,8 @@ https://www.gitpod.io/docs/43_config_ports/
 - Jasmine
 
 
-## Images Source 
-I got my animal images from a free open sourced website: https://www.pexels.com/
-
-
-## Support
-To contact GitHub, follow this link: https://support.github.com/
-
-
 ## RoadMap
+
 Plans I have to implement in this game in the future:
 - To add a timer counting down from 1 minute or
 - To create a timer counting up.
@@ -174,17 +174,34 @@ Plans I have to implement in this game in the future:
 - To add sound effects or music relevant to the theme.
 
 
-## Deployed Site
-To access my GitHub repository, click this link: 
+## Deployment
 
-Live site can be accessed by clicking the link:
+To deploy your website, go to your repository in GitHub:
+1. Click **Settings** at the top right right.
+2. Scroll down to a section called **GitHub Pages**.
+3. Below **Source**, click on the dropdown menu and select **master branch**.
+4. Refresh the page and click on the live link for your application to the live server.
+
+To access my GitHub repository, click this link:
+https://github.com/terencecistudent/matching-cards-project.git
+
+Live site can be accessed by clicking this link:
 https://terencecistudent.github.io/matching-cards-project/
 
 
-## Authors and Acknowledgment
+## Support
+
+To contact GitHub, follow this link: https://support.github.com/
+
+
+## Credits 
+
+### Media 
+
+I got the animal images from a free open sourced website: https://www.pexels.com/
+
+
+### Authors and Acknowledgment
+
 - **Autor**: Terence Logue
 - **Acknowledgment**: Code Institute Slack, Code Institute Tutor Support
-
-
-### Project Status
-Not entirely finished but very close.
