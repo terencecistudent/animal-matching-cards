@@ -8,6 +8,9 @@ $(document).ready(function() {
 
     let counter = 0;
 
+    const movesCount = document.querySelector(".moves");
+    let moves = 0;
+
     // Flips the card
     function flipCard() {
         if(lockGame) {
