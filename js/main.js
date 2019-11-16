@@ -8,19 +8,30 @@ $(document).ready(function() {
 
     let counter = 0;
 
-    var seconds = document.getElementById("countdown").textContent;
+    var timerStartTime = 5;
+    var countdownElement = document.getElementById('countdown');
+    var timerId = setInterval(countdown, 1000);
 
-    var countdown = setInterval(function() {
-        seconds--;
-        (seconds == 1) ? document.getElementById("plural").textContent = "": document.getElementById("plural").textContent = "s";
-        document.getElementById("countdown").textContent = seconds;
-        if (seconds <= 0) clearInterval(countdown);
-    }, 1000);
+    // Timer which counts down from 40
+    countdown = () => {
+        if (timerStartTime <= -1) {
+            clearTimeout(timerId);
+            outOfTimeModal();
+        } else {
+            countdownElement.innerHTML = timerStartTime;
+            timerStartTime--;
+        }
+    }
+
+    // A function that pops up the modal when the time runs out
+    outOfTimeModal = () => {
+        $("#timer-modal").modal("show");
+    }
+
 
     // Flips the card
     function flipCard() {
         if(lockGame) return;
-        
 
         if(this === firstCard) return;
 
@@ -37,6 +48,7 @@ $(document).ready(function() {
         haveFlippedCard = false;
         secondCard = this;
 
+        countdown();
         checkMatches();
     }
 
@@ -92,12 +104,6 @@ $(document).ready(function() {
             card.style.order = randomPosition;
         });
     })();
-
-
-    const setTimer = () => {
-        secs.textContent = seconds + ' second' + (seconds == 1 ?  '' :  's')
-        if(seconds --> 0) setTimeout(countdown, 1000)
-    }
 
 
     // Resets and reshuffles the game
