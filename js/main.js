@@ -10,13 +10,10 @@ $(document).ready(function() {
 
     // Flips the card
     function flipCard() {
-        if(lockGame) {
-            return;
-        }
+        if(lockGame) return;
+        
 
-        if(this === firstCard) {
-            return;
-        }
+        if(this === firstCard) return;
 
         this.classList.add("flip");
 
@@ -46,8 +43,6 @@ $(document).ready(function() {
         if(counter === 6) {
             $("#myModal").modal("show");
         }
-
-        console.log(counter);
 
         // ternary operator
         cardsMatch ? cardsThatAreDisabled() : unflipCards();
