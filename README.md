@@ -35,7 +35,7 @@ https://fonts.google.com/
 I have used a software called JustInMind Prototyper to create 2D Models of my game.  
 As not everybody will not be able to access this software, I have made screenshots and put them into Word documents attached to my GitHub.
 - A link to my wireframes can be found here:
-https://github.com/terencecistudent/matching-cards-project/blob/master/2D%20Model%20Responsive.docx
+https://github.com/terencecistudent/matching-cards-project/blob/master/2D-Model-Responsive.pdf
 
 
 ## Requirements
@@ -105,10 +105,10 @@ https://github.com/terencecistudent/matching-cards-project/tree/master/testing
 
 As well as Jasmine Testing, I have also completed manual tests regarding the Modal and Button's functionality:
 Attached is a link to a Word document as to where I have printed screenshots which is contained in the **testing** folder:
-https://github.com/terencecistudent/matching-cards-project/blob/master/testing/Modal%20and%20Button%20Functionality.docx
+https://github.com/terencecistudent/matching-cards-project/blob/master/testing/Modal-and-Button-Functionality.pdf
 
 
-### Running Respnsive Designs on Google Chrome:
+### Running Responsive Designs on Google Chrome:
 
 Here is a link how to run the application on a live server by configuring and exposing ports with GitPod:
 https://www.gitpod.io/docs/43_config_ports/
@@ -218,4 +218,4 @@ I got the animal images from a free open sourced website: https://www.pexels.com
 ### Authors and Acknowledgment
 
 - **Autor**: Terence Logue
-- **Acknowledgment**: Code Institute Slack, Code Institute Tutor Support
+- **Acknowledgment**: Code Institute Slack, Code Institute Tutor Support, Assigned Mentor: Maranatha Ilesanmi
