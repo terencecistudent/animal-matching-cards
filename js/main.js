@@ -8,6 +8,15 @@ $(document).ready(function() {
 
     let counter = 0;
 
+    var seconds = document.getElementById("countdown").textContent;
+
+    var countdown = setInterval(function() {
+        seconds--;
+        (seconds == 1) ? document.getElementById("plural").textContent = "": document.getElementById("plural").textContent = "s";
+        document.getElementById("countdown").textContent = seconds;
+        if (seconds <= 0) clearInterval(countdown);
+    }, 1000);
+
     // Flips the card
     function flipCard() {
         if(lockGame) return;
@@ -83,6 +92,12 @@ $(document).ready(function() {
             card.style.order = randomPosition;
         });
     })();
+
+
+    const setTimer = () => {
+        secs.textContent = seconds + ' second' + (seconds == 1 ?  '' :  's')
+        if(seconds --> 0) setTimeout(countdown, 1000)
+    }
 
 
     // Resets and reshuffles the game
