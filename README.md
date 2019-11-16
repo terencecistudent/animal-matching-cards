@@ -145,18 +145,26 @@ https://www.gitpod.io/docs/43_config_ports/
 
 - Laptop View:
 
-![image](https://user-images.githubusercontent.com/48124466/68890915-cc36b100-0717-11ea-90e8-5fa30777f166.png)
+![image](https://user-images.githubusercontent.com/48124466/68990987-b62d0b80-0851-11ea-8d4a-49586138c48e.png)
 
+-iPad View (Portrait):
+
+![image](https://user-images.githubusercontent.com/48124466/68991014-e7a5d700-0851-11ea-957c-08dfc2c5e5b3.png)
 
 - iPad View (Landscape):
 
-![image](https://user-images.githubusercontent.com/48124466/68891014-f6886e80-0717-11ea-9ee9-4a4fab8f4ed3.png)
+![image](https://user-images.githubusercontent.com/48124466/68991034-1459ee80-0852-11ea-8835-a95cc2577aab.png)
 
+- Phone View (Portrait):
+
+![image](https://user-images.githubusercontent.com/48124466/68991050-3a7f8e80-0852-11ea-8056-bf7ec9a97e88.png)
+![image](https://user-images.githubusercontent.com/48124466/68991060-479c7d80-0852-11ea-9dd7-9cee5e148ab5.png)
 
 - Phone View (Landscape):
 
-![image](https://user-images.githubusercontent.com/48124466/68891064-0acc6b80-0718-11ea-9079-b0a15a35ef92.png)
-![image](https://user-images.githubusercontent.com/48124466/68891118-2768a380-0718-11ea-920e-a291a20f5c23.png)
+![image](https://user-images.githubusercontent.com/48124466/68991069-600c9800-0852-11ea-99de-0de1df14b739.png)
+![image](https://user-images.githubusercontent.com/48124466/68991076-74509500-0852-11ea-97b3-41acca58789e.png)
+![image](https://user-images.githubusercontent.com/48124466/68991088-85010b00-0852-11ea-9e4a-e7d6a4bfda25.png)
 
 
 ## Technologies Used
