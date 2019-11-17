@@ -8,9 +8,11 @@ $(document).ready(function() {
 
     let counter = 0;
 
-    var timerStartTime = 5;
+    // Variables for countdown timer
+    var timerStartTime = 3;
     var countdownElement = document.getElementById('countdown');
     var timerId = setInterval(countdown, 1000);
+
 
     // Timer which counts down from 40
     function countdown() {
@@ -22,6 +24,7 @@ $(document).ready(function() {
             timerStartTime--;
         }
     }
+
 
     // A function that pops up the modal when the time runs out
     outOfTimeModal = () => {
@@ -48,7 +51,6 @@ $(document).ready(function() {
         haveFlippedCard = false;
         secondCard = this;
 
-        countdown();
         checkMatches();
     }
 
@@ -63,6 +65,8 @@ $(document).ready(function() {
 
         if(counter === 6) {
             $("#myModal").modal("show");
+
+            timerStartTime = 40;
         }
 
         // ternary operator
