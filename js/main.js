@@ -13,7 +13,7 @@ $(document).ready(function() {
     var timerId = setInterval(countdown, 1000);
 
     // Timer which counts down from 40
-    countdown = () => {
+    function countdown() {
         if (timerStartTime <= -1) {
             clearTimeout(timerId);
             outOfTimeModal();
