@@ -11,7 +11,7 @@ $(document).ready(function() {
     // Variables for countdown timer
     var timerStartTime = 3;
     var countdownElement = document.getElementById('countdown');
-    var timerId = setInterval(countdown, 1000);
+    var timerId;
 
 
     // Timer which counts down from 40
@@ -34,6 +34,8 @@ $(document).ready(function() {
 
     // Flips the card
     function flipCard() {
+        timerId = setInterval(countdown, 1000);
+
         if(lockGame) return;
 
         if(this === firstCard) return;
