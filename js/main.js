@@ -1,24 +1,29 @@
 $(document).ready(function() {
 
+    const restart = document.querySelector(".restart");
     const cards = document.querySelectorAll(".memory-card");
+    restart.innerHTML = "Start Game";
 
     let haveFlippedCard = false;
     let lockGame = false;
     let firstCard, secondCard;
 
+    let moves = 0;
     let counter = 0;
 
     // Variables for countdown timer
-    var timerStartTime = 3;
-    var countdownElement = document.getElementById('countdown');
-    var timerId;
+    let timerStartTime = 40;
+    let countdownElement = document.getElementById('countdown');
+    let timerId;
 
 
     // Timer which counts down from 40
     function countdown() {
         if (timerStartTime <= -1) {
+            lockGame = true;
             clearTimeout(timerId);
             outOfTimeModal();
+            cards.forEach(card => card.removeEventListener("click", flipCard));
         } else {
             countdownElement.innerHTML = timerStartTime;
             timerStartTime--;
@@ -34,8 +39,6 @@ $(document).ready(function() {
 
     // Flips the card
     function flipCard() {
-        timerId = setInterval(countdown, 1000);
-
         if(lockGame) return;
 
         if(this === firstCard) return;
@@ -54,6 +57,7 @@ $(document).ready(function() {
         secondCard = this;
 
         checkMatches();
+        moves++;
     }
 
 
@@ -67,7 +71,6 @@ $(document).ready(function() {
 
         if(counter === 6) {
             $("#myModal").modal("show");
-
             timerStartTime = 40;
         }
 
@@ -104,19 +107,36 @@ $(document).ready(function() {
 
 
     // Shuffles the cards
-    (function shuffleCards() {
+    function shuffleCards() {
         cards.forEach(card => {
             let randomPosition = Math.floor(Math.random() * 12);
             card.style.order = randomPosition;
         });
-    })();
+    };
 
+    function newGame() {
+        // un-flip all cards
+        cards.forEach(card => card.classList.remove("flip"));
+        // reset the cards
+        resetCards();
+        // reset the timer
+        clearTimeout(timerId);
+        timerId = setInterval(countdown, 1000);
+        // shuffle the cards
+        setTimeout(shuffleCards, 500);
+        // loop through list of cards
+        cards.forEach(card => card.addEventListener("click", flipCard));
+        // reset the timer
+        timerStartTime = 40;
+        // reset total moves and matches count
+        moves = 0;
+        counter = 0;
+    }
 
     // Resets and reshuffles the game
-    $('#restart').click(function(){
-        location.reload();
-    });
-
-    // loop through list of cards
-    cards.forEach(card => card.addEventListener("click", flipCard));
+    restart.addEventListener("click", function() {
+        restart.innerHTML = "Loading...";
+        newGame();
+        setTimeout(function() {restart.innerHTML = "New Game";}, 500);
+    })
 });
