@@ -181,8 +181,6 @@ https://www.gitpod.io/docs/43_config_ports/
 ## RoadMap
 
 Plans I have to implement in this game in the future:
-- To add a timer counting down from 1 minute or
-- To create a timer counting up.
 - To show to number of moves the user has made.
 - To add more photos of animals to create a bigger and enjoyable user experience.
 - To create a nicer layout and smoother transactions.
