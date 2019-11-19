@@ -13,6 +13,7 @@ This game is also browser cross compatible.
 
 ### User Stories
 
+- As a user, I would like to click the **Start Game** button which will start the timer and game.
 - As a user, I would like to click on a card which I want to select.
 - As a user, I want to click on two cards to see if I got a match.
 - As a user, I do not want to click on three cards which will all turn around at the same time as this will cause a problem.
@@ -186,6 +187,26 @@ Plans I have to implement in this game in the future:
 - To add more photos of animals to create a bigger and enjoyable user experience.
 - To create a nicer layout and smoother transactions.
 - To add sound effects or music relevant to the theme.
+
+
+## Cloning and Pushing To The Respository
+
+### Cloning 
+
+- Here is a link how to clone a repository: 
+https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
+
+
+### Pushing To The Respository
+- To add, commit and push files to the repository, e.g. index.html, open a New Terminal and type:
+1. git add index.html
+2. git commit -m "Leave a message here"
+3. git push origin master - (which is for the master branch).
+
+- To create a new branch within your current application, open a New Terminal:
+1. Create a branch: git checkout -b new-branch-name
+2. Edit, add to your application and commit the files.
+3. Push the branch to the remote repository: git push origin new-branch-name 
 
 
 ## Deployment
