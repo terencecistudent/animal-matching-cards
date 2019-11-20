@@ -72,6 +72,7 @@ $(document).ready(function() {
         if(counter === 6) {
             $("#myModal").modal("show");
             timerStartTime = 40;
+            clearTimeout(timerId);
         }
 
         // ternary operator
