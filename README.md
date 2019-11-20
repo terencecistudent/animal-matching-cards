@@ -2,9 +2,11 @@
 
 ## Description
 This is an animal matching card game where there are twelve cards lined out 4x3 (4 across and 3 down).  The aim
-is to click on a card which will flip over, then click on another card to see if it will match.  Once the user has
-matched all of the cards there will be a pop up saying 'Congratulations'.  There is a button above the game container
-which allows the user to restart the game.
+is to click on a card which will flip over, then click on another card to see if it will match.  The user should click the 
+**Start Game** button to start the timer and game.  Once the user has matched all of the cards there will be a pop up saying 
+'Congratulations' containing a **New Game** button and a **Close** button.  There is also a pop up if the user runs out of time
+which contains the same buttons.  The timer will stop when all of the cards are selected.  When the user runs out of time, the
+cards will become disabled for clicking on.
 
 This game is also browser cross compatible.
 
@@ -16,8 +18,12 @@ This game is also browser cross compatible.
 - As a user, I would like to click the **Start Game** button which will start the timer and game.
 - As a user, I would like to click on a card which I want to select.
 - As a user, I want to click on two cards to see if I got a match.
+- As a user, I would like the two cards I selected which are not a match to turn back around, as this would mean there is an error in the game.
 - As a user, I do not want to click on three cards which will all turn around at the same time as this will cause a problem.
+- As a user, I would like to play this game on a laptop, iPad or mobile phone as it means that the game can be played in different devices.
+- As a user, I would like the timer to stop counting down when all the cards are matched as I would like to see how much I had left to complete the game.
 - As a user, I would like a pop up message shown when I complete the game with a vistory message so I know that I have completed the game.
+- As a user, I would like a pop up message shown which then I can either close or play a game, as I would like to play again.
 - As a user, I would like to play a new game to find reshuffled cards.
 
 
@@ -104,7 +110,7 @@ https://github.com/terencecistudent/matching-cards-project/tree/master/testing
 
 ### Manual Tests
 
-As well as Jasmine Testing, I have also completed manual tests regarding the Modal and Button's functionality:
+As well as Jasmine Testing, I have also completed manual tests regarding the Timer, Modal and Button's functionality:
 Attached is a link to a Word document as to where I have printed screenshots which is contained in the **testing** folder:
 https://github.com/terencecistudent/matching-cards-project/blob/master/testing/Modal-and-Button-Functionality.pdf
 
@@ -146,26 +152,27 @@ https://www.gitpod.io/docs/43_config_ports/
 
 - Laptop View:
 
-![image](https://user-images.githubusercontent.com/48124466/69191114-c4ad4880-0b19-11ea-8b61-1fdb3d336a07.png)
+![image](https://user-images.githubusercontent.com/48124466/69241778-66bf4600-0b97-11ea-95ba-fb5d0f9c8a1f.png)
 
 -iPad View (Portrait):
 
-![image](https://user-images.githubusercontent.com/48124466/69191202-ec041580-0b19-11ea-8fae-cf3043bb93ca.png)
+![image](https://user-images.githubusercontent.com/48124466/69241843-89e9f580-0b97-11ea-9227-7039d774f0c9.png)
 
 - iPad View (Landscape):
 
-![image](https://user-images.githubusercontent.com/48124466/69191231-03430300-0b1a-11ea-992d-98289fefa353.png)
+![image](https://user-images.githubusercontent.com/48124466/69241882-9b330200-0b97-11ea-9e00-8b949b149bab.png)
 
 - Phone View (Portrait):
 
-![image](https://user-images.githubusercontent.com/48124466/69191285-1c4bb400-0b1a-11ea-89bb-1f51d6fc8169.png)
-![image](https://user-images.githubusercontent.com/48124466/69191328-2ff71a80-0b1a-11ea-8ae3-6353e1b84019.png)
+![image](https://user-images.githubusercontent.com/48124466/69241924-b6057680-0b97-11ea-892f-541d0a4dc99f.png)
+![image](https://user-images.githubusercontent.com/48124466/69241968-cf0e2780-0b97-11ea-9e82-7522fe133644.png)
+![image](https://user-images.githubusercontent.com/48124466/69242001-e220f780-0b97-11ea-8e0a-f3cdf3cb1325.png)
 
 - Phone View (Landscape):
 
-![image](https://user-images.githubusercontent.com/48124466/69191405-51580680-0b1a-11ea-88b0-2320c505c590.png)
-![image](https://user-images.githubusercontent.com/48124466/69191452-692f8a80-0b1a-11ea-8e0c-2b1b24e66c5b.png)
-![image](https://user-images.githubusercontent.com/48124466/69191478-7b112d80-0b1a-11ea-8a8e-7516d743cf53.png)
+![image](https://user-images.githubusercontent.com/48124466/69242056-f82eb800-0b97-11ea-9240-3f82a3fca63f.png)
+![image](https://user-images.githubusercontent.com/48124466/69242102-0c72b500-0b98-11ea-855e-e0cb7118e4e1.png)
+![image](https://user-images.githubusercontent.com/48124466/69242134-1ac0d100-0b98-11ea-844f-52beeb2f452a.png)
 
 
 ## Technologies Used
