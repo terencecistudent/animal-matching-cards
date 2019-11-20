@@ -16,10 +16,10 @@ body {
     color: white;
 }
 
-/* Memory Game and Card Styles */
+/* Memory Game Container Styles */
 .memory-game-container {
-    max-width: 640px;
-    height: 450px;
+    max-width: 500px;
+    height: 340px;
     padding-right: 15px;
     padding-left: 15px;
     margin: auto;
@@ -28,9 +28,10 @@ body {
     justify-content: center;
 }
 
+/* Memory Card Styles */
 .memory-card {
-    width: calc(25% - 10px);
-    height: calc(33.3% - 10px);
+    width: 100px;
+    height: 100px;
     margin: 5px;
     position: relative;
     transform: scale(1);
@@ -48,15 +49,17 @@ body {
     transform: rotateY(180deg);
 }
 
+/* The front and back facing cards styles */
 .front-face,
 .back-face {
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
     position: absolute;
     border-radius: 5px;
     backface-visibility: hidden;
 }
 
+/* Flips the front facing card 180 degrees */
 .front-face {
     transform: rotateY(180deg);
 }
