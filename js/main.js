@@ -8,7 +8,6 @@ $(document).ready(function() {
     let lockGame = false;
     let firstCard, secondCard;
 
-    let moves = 0;
     let counter = 0;
 
     // Variables for countdown timer
@@ -37,7 +36,7 @@ $(document).ready(function() {
     }
 
 
-    
+    // Modal restart buttons work when New Game button is pressed
     $(".modal-restart").click(function() {
         $("#timer-modal").modal("hide");
         $("#myModal").modal("hide");
@@ -66,7 +65,6 @@ $(document).ready(function() {
         secondCard = this;
 
         checkMatches();
-        moves++;
     }
 
 
@@ -138,8 +136,7 @@ $(document).ready(function() {
         cards.forEach(card => card.addEventListener("click", flipCard));
         // reset the timer
         timerStartTime = 40;
-        // reset total moves and matches count
-        moves = 0;
+        // reset total matches count
         counter = 0;
     }
 
