@@ -154,7 +154,7 @@ https://www.gitpod.io/docs/43_config_ports/
 
 ![image](https://user-images.githubusercontent.com/48124466/69241778-66bf4600-0b97-11ea-95ba-fb5d0f9c8a1f.png)
 
--iPad View (Portrait):
+- iPad View (Portrait):
 
 ![image](https://user-images.githubusercontent.com/48124466/69241843-89e9f580-0b97-11ea-9227-7039d774f0c9.png)
 
