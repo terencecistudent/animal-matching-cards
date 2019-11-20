@@ -37,6 +37,15 @@ $(document).ready(function() {
     }
 
 
+    
+    $(".modal-restart").click(function() {
+        $("#timer-modal").modal("hide");
+        $("#myModal").modal("hide");
+        newGame();
+    });
+    
+
+
     // Flips the card
     function flipCard() {
         if(lockGame) return;
